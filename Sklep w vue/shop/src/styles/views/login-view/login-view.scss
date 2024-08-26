@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+.view-login {
+  min-height: 80vh;
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .input_form {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+  }
+
+  .input_form:focus {
+    outline: none;
+  }
+}
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}

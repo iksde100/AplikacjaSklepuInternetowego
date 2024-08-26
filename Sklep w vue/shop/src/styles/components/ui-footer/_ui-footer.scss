@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ui-footer__container {
+  background-color: #333;
+  padding: 1rem 0;
+  color: white;
+  position: relative;
+}
+
+.ui-footer__info {
+  background-color: #333;
+  color: white;
+  text-align: center; /* Wyśrodkowanie tekstu */
+  position: relative; /* Ustawienie pozycji */
+  bottom: 0;
+  width: 100%; /* Pełna szerokość */
+  height: 20px; /* Stała wysokość, aby uniknąć problemów z centrowaniem */
+  display: flex; /* Flexbox dla centrowania */
+  justify-content: center; /* Wyśrodkowanie poziome */
+  align-items: center; /* Wyśrodkowanie pionowe */
+  z-index: 9000;
+}

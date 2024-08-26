@@ -1,0 +1,14 @@
+.ui-input {
+  .input_form {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+    padding-top: 5%;
+  }
+
+  .input_form:focus {
+    outline: none;
+  }
+}

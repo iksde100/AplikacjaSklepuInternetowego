@@ -1,0 +1,53 @@
+.product-tile-big {
+  display: flex;
+  margin: 2 auto;
+
+  .button {
+    display: inline-block;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  &__left {
+    flex: 1 1 60%;
+  }
+
+  &__right {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2;
+
+    //position: relative;
+    //display: flex;
+    //justify-content: center;
+    align-items: center;
+
+    > * {
+      margin: 0 0 2 !important;
+    }
+  }
+
+  &__app-rating {
+    height: 30px;
+  }
+
+  &__specification {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__buy-button > div {
+    margin: 0 auto;
+  }
+}

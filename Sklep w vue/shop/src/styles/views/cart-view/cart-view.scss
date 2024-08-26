@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cart_view__container {
+  min-height: 80vh;
+  .products-list {
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    li:nth-child(even) {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    li:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    li:last-child {
+      border-top: 2px solid #300;
+      justify-content: flex-end;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 0 20px;
+    }
+
+    &__image {
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__name {
+      flex: 1 1;
+      padding: 0 10px;
+    }
+
+    &__price {
+      padding: 0 10px;
+    }
+  }
+
+  .input_form {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    outline: none;
+  }
+
+  .input_form:focus {
+    outline: none;
+  }
+
+  .container {
+    display: flex;
+    //justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: start; /* Wyśrodkowanie pionowe */
+    height: 100vh; /* Pełna wysokość ekranu */
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie przycisków obok siebie */
+    gap: 10px; /* Odstęp między przyciskami */
+    margin-top: 20px;
+  }
+
+  .cart_button {
+    display: flex;
+    width: auto;
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .buttons {
+    display: inline-block;
+    width: auto;
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+}

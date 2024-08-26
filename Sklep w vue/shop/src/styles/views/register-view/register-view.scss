@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.register-view {
+  min-height: 80vh;
+  $blur: 5px;
+  $from: rgba(235, 237, 243, 0.8) 0%;
+  $to: rgba(121, 133, 148, 0.9) 60%;
+
+  height: 65vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .input_form {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+  }
+
+  .input_form:focus {
+    outline: none;
+  }
+}

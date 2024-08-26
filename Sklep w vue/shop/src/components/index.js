@@ -1,0 +1,11 @@
+export { default as UiHeader } from "./ui-header/ui-header.vue";
+export { default as UiFooter } from "./ui-footer/ui-footer.vue";
+export { default as UiInput } from "./ui-input/ui-input.vue";
+export { default as UiPagination } from "./ui-pagination/ui-pagination.vue";
+export { default as UiSelect } from "./ui-select/ui-select.vue";
+export { default as UiRating } from "./ui-rating/ui-rating.vue";
+export { default as UiLoader } from "./ui-loader/ui-loader.vue";
+export { default as UiProductTile } from "./ui-product-tile/ui-product-tile.vue";
+export { default as UiProductTileBig } from "./ui-product-tile-big/ui-product-tile-big.vue";
+export { default as UiPromotionTile } from "./ui-promotion-tile/ui-promotion-tile.vue";
+export { default as UiPopupButton } from "./ui-popup-button/ui-popup-button.vue";

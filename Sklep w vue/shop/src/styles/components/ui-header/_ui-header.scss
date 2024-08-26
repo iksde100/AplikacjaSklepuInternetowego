@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+
+.montaga-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.the-header {
+  background-color: #333;
+  padding: 1rem 0;
+  color: white;
+  position: relative;
+
+  .auth_button,
+  .user_menu {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%; /* Ustawia szerokość kontenera */
+    margin-left: 10; /* Usuwa margines po lewej stronie kontenera */
+    margin-right: auto; /* Ustawia automatyczny margines po prawej stronie */
+    display: flex;
+    justify-content: flex-start; /* Wyrównuje elementy do lewej strony */
+    align-items: center;
+  }
+
+  .the-header__links {
+    display: flex;
+  }
+
+  .the-header__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .the-header__action-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    margin-top: 24px;
+    background: #333;
+    box-shadow: 0px 4px 12px 3px rgba(0, 0, 0, 0.25);
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #333;
+      top: -10px;
+      right: 20px;
+    }
+  }
+
+  .the-header__cart-products {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 4px;
+
+      &:nth-child(odd) {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      &:nth-child(even) {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    li:last-child {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border-top: 1px solid #fff;
+      background: none;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none; /* Usuwa ramkę */
+    border-radius: 4px;
+    color: #fff; /* Kolor tekstu */
+    background-color: #888; /* Jednolity szary kolor tła */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .button:last-child {
+    margin-right: 1;
+  }
+
+  .button:hover {
+    background-color: #666; /* Ciemniejszy szary podczas najechania */
+    transform: translateY(-2px);
+  }
+
+  .button:active {
+    background-color: #444; /* Najciemniejszy szary podczas kliknięcia */
+    transform: translateY(1px);
+  }
+}

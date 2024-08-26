@@ -1,0 +1,29 @@
+.ui-pagination {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+
+  button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+
+    &.active {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
